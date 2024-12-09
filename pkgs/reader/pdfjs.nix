@@ -11,11 +11,11 @@ buildNpmPackage rec {
   src = fetchFromGitHub {
     owner = "zotero";
     repo = "pdf.js";
-    rev = "b658eb6edc972f21b4518a932e1836e7752ebe27";
-    hash = "sha256-PKaxJK85wRd+w8R/o70PVnAH9/SwfHJ6EhhC/33enMQ=";
+    rev = "cb447cb9182cc027e536893535e73ad1bc0816b1";
+    hash = "sha256-/oNmVW8vGnKHUSbFSERQXvFnirVyY0aLEwLbBDGgA4w=";
   };
 
-  npmDepsHash = "sha256-NsS6odvDBWXWXtDmmV3YqT8gtcwTqYtZwxawQWYMxbM=";
+  npmDepsHash = "sha256-3a0lNwUxlHOnANq7MyefFCxDkc7PbWfXhUY6lf8U2Pc=";
   makeCacheWritable = true;
 
   nativeBuildInputs = [

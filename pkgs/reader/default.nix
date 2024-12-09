@@ -11,11 +11,11 @@ buildNpmPackage rec {
   src = fetchFromGitHub {
     owner = "zotero";
     repo = "reader";
-    rev = "82435d9299cf6d35ae745f57cbe232a334791761";
-    hash = "sha256-ESaxiVIlzKAad+le6oxLQSaqIWA7wTjkwNWGBBxz4wM=";
+    rev = "533ccd38ca0f2f5ab3c5be277516a4dba581629c";
+    hash = "sha256-O1GESF75Ag/eaU9+j02lMQMAFXfbnsgI1KEhEfJ4L1U=";
   };
 
-  npmDepsHash = "sha256-26i2+sY2Kp0DIFOUkQVlI67HO4KTcQyd8pqSZqpWCCQ=";
+  npmDepsHash = "sha256-zOcXOio2VLzElHf5LtJO4XcBDLV5WGgYAeRjFrbUsNE=";
   npmRebuildFlags = [ "--ignore-scripts" ];
 
   # Avoid npm install since it is handled by buildNpmPackage
